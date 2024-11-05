@@ -1,0 +1,68 @@
+body  {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial;
+    padding: 0% 0% 0% 0%;
+    margin: 0% 0% 0% 0%;
+
+    height: 100vh;
+    min-height: 1000px;
+    max-height: 1500px;
+    width: 100vw;
+}
+
+#titol {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3d4870;
+
+    height: 5%;
+    width: 100%;
+
+    header {
+        color: #FFFFFF;
+        font-size: 30px;
+        padding: 0% 0% 0% 0%;
+        margin: 0% 0% 0% 0%;
+    }
+}
+
+#entrada_info {
+    background-color: #FFFFFF;
+    padding: 0% 0% 0% 35%;
+    margin: 0% 0% 0% 0%;
+
+    height: 20%;
+    width: 100%;
+
+    h1 {
+        color: #000000;
+        font-size: 18px;
+        padding: 0% 0% 0% 0%;
+        margin: 20px 0% 10px 0%;
+    }
+
+    label {
+        color: #000000;
+        font-size: 10px;
+    }
+
+    input[type=text] {
+        color: #000000;
+        font-size: 10px;
+    }
+
+    input[type=submit] {
+        color: #000000;
+        font-size: 10px;
+    }
+}
+
+#sortida_joc {
+    padding: 0% 35% 0% 35%;
+    margin: 0% 0% 0% 0%;
+
+    height: 75%;
+    width: 100%;
+}
