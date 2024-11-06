@@ -1,13 +1,16 @@
-body  {
-    display: flex;
-    flex-direction: column;
-    font-family: Arial;
+:root {
+	--max-width: 1920px;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+    font-family: Calibri;
     padding: 0% 0% 0% 0%;
     margin: 0% 0% 0% 0%;
 
-    height: 100vh;
-    min-height: 1000px;
-    max-height: 1500px;
+    height: 1080px;
     width: 100vw;
 }
 
@@ -19,6 +22,7 @@ body  {
 
     height: 5%;
     width: 100%;
+	max-width: var(--max-width);
 
     header {
         color: #FFFFFF;
@@ -29,40 +33,51 @@ body  {
 }
 
 #entrada_info {
-    background-color: #FFFFFF;
-    padding: 0% 0% 0% 35%;
+	display: flex;
+	justify-content: center;
+    background-color: #DDDDDD;
+    padding: 0% 0% 0% 0%;
     margin: 0% 0% 0% 0%;
 
     height: 20%;
     width: 100%;
+	max-width: var(--max-width);
 
     h1 {
         color: #000000;
         font-size: 18px;
-        padding: 0% 0% 0% 0%;
-        margin: 20px 0% 10px 0%;
+        padding: 20px 0% 10px 0%;
+        margin: 0% 0% 0% 0%;
     }
 
     label {
         color: #000000;
         font-size: 10px;
+		padding: 0% 0% 0% 0%;
+		margin: 0% 0% 0% 0%;
     }
 
     input[type=text] {
         color: #000000;
         font-size: 10px;
+		padding: 0% 0% 0% 0%;
+		margin: 0% 0% 0% 0%;
     }
 
     input[type=submit] {
         color: #000000;
         font-size: 10px;
+		padding: 0% 0% 0% 0%;
+		margin: 15px 0% 0% 0%;
     }
 }
 
 #sortida_joc {
-    padding: 0% 35% 0% 35%;
+	background-color: #EEEEEE;
+    padding: 0% 0% 0% 0%;
     margin: 0% 0% 0% 0%;
 
     height: 75%;
     width: 100%;
+	max-width: var(--max-width);
 }
