@@ -35,7 +35,7 @@ body {
 #entrada_info {
 	display: flex;
 	justify-content: center;
-    background-color: #DDDDDD;
+    background-color: #FFFFFF;
     padding: 0% 0% 0% 0%;
     margin: 0% 0% 0% 0%;
 
@@ -46,6 +46,7 @@ body {
     h1 {
         color: #000000;
         font-size: 18px;
+		font-weight: normal;
         padding: 20px 0% 10px 0%;
         margin: 0% 0% 0% 0%;
     }
@@ -73,7 +74,7 @@ body {
 }
 
 #sortida_joc {
-	background-color: #EEEEEE;
+	background-color: #FFFFFF;
     padding: 0% 0% 0% 0%;
     margin: 0% 0% 0% 0%;
 
