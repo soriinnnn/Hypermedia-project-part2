@@ -6,6 +6,7 @@
         <title>Seven and a half game</title>
         <link type="text/css" href="joc.css" rel="stylesheet">
 		<script type="text/javascript" src="joc.js"></script>
+		<script type="text/javascript" src="ListScript complete.js"></script>
     </head>
     <body>
         <div id="titol">
@@ -13,13 +14,11 @@
         </div>
         <div id="entrada_info">
 			<div id="info_jugador">
-				<h1>Player information</h1>
+				<h1 class="info_jugador">Player information</h1>
 				
-				<form onsubmit="startGame()">
-					<label>Name:</label><input id="playerName" type="text"/><br/>
-					<label>Initial money:</label><input id="initialMoney" type="text"/><br/>
-					<input type="submit" value="Play"/>
-				</form>
+				<label>Name: <input id="playerName" class="info_jugador" type="text"/></label><br/>
+				<label>Initial money: <input id="initialMoney" class="info_jugador" type="text"/></label><br/>
+				<button onclick="startGame()">Play</button>
 			</div>
         </div>
         <div id="sortida_joc">
