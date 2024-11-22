@@ -31,7 +31,7 @@ function endGame() {
 	alert("xdd");
 }
 
-// WIP
+// CLASSES
 class Player {
 	// ATRIBUTS
 	#name;	 // Nom del jugador.

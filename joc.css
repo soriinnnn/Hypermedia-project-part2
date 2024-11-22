@@ -1,4 +1,23 @@
+@font-face {
+    font-family: 'Cardo';
+    src: url('/fonts/Cardo/Cardo-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cardo';
+    src: url('/fonts/Cardo/Cardo-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
 :root {
+    --base-color: #F0F0F0;
+    --base-font-size: 16px;
+    --min-height: 480px;
+    --max-height: 1080px;
+    --min-width: 640px;
 	--max-width: 1920px;
 }
 
@@ -6,79 +25,90 @@ body {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-    font-family: Calibri;
-    padding: 0% 0% 0% 0%;
-    margin: 0% 0% 0% 0%;
+    font-size: var(--base-font-size);
+    font-family: Cardo, Calibri, Roboto;
+    background-image: url('/images/poker_background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 0;
+    margin: 0;
 
-    height: 1080px;
+    height: 100vh;
+    min-height: var(--min-height);
+    max-height: var(--max-height);
     width: 100vw;
+    min-width: var(--min-width);
+    max-width: var(--max-width);
 }
 
 #titol {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #3d4870;
+    background-color: #00000080;
 
-    height: 5%;
+    height: 10%;
     width: 100%;
-	max-width: var(--max-width);
 
     header {
-        color: #FFFFFF;
-        font-size: 30px;
-        padding: 0% 0% 0% 0%;
-        margin: 0% 0% 0% 0%;
+        color: var(--base-color);
+        font-size: 1.875rem;
+        padding: 0;
+        margin: 0;
     }
 }
 
-#entrada_info {
-	display: flex;
-	justify-content: center;
-    background-color: #FFFFFF;
-    padding: 0% 0% 0% 0%;
-    margin: 0% 0% 0% 0%;
+#info_jugador {
+    /*background-color: #e9e9e9;*/
+    padding: 0;
+    margin: 0;
 
     height: 20%;
     width: 100%;
-	max-width: var(--max-width);
 
     h1 {
         color: #000000;
-        font-size: 18px;
+        font-size: 1.125rem;
 		font-weight: normal;
-        padding: 20px 0% 10px 0%;
-        margin: 0% 0% 0% 0%;
+        padding: 20px 0% 10px 0%; 
+        margin: 0;
     }
 
-    label {
-        color: #000000;
-        font-size: 10px;
-		padding: 0% 0% 0% 0%;
-		margin: 0% 0% 0% 0%;
-    }
+    #entrada_info {
+        label {
+            color: #000000;
+            font-size: 0.625rem;
+            padding: 0;
+            margin: 0;
+        }
+    
+        input[type=text] {
+            color: #000000;
+            font-size: 0.625rem;
+            padding: 0;
+            margin: 0;
+        }
 
-    input[type=text] {
-        color: #000000;
-        font-size: 10px;
-		padding: 0% 0% 0% 0%;
-		margin: 0% 0% 0% 0%;
-    }
-
-    input[type=submit] {
-        color: #000000;
-        font-size: 10px;
-		padding: 0% 0% 0% 0%;
-		margin: 15px 0% 0% 0%;
+        input[type=number] {
+            color: #000000;
+            font-size: 0.625rem;
+            padding: 0;
+            margin: 0;
+        }
     }
 }
 
-#sortida_joc {
-	background-color: #FFFFFF;
-    padding: 0% 0% 0% 0%;
-    margin: 0% 0% 0% 0%;
+#entrada_joc {
 
-    height: 75%;
+}
+
+#sortida_joc {
+    /*background-color: #FFFFFF;*/
+    padding: 0;
+    margin: 0;
+
+    height: 70%;
     width: 100%;
-	max-width: var(--max-width);
 }
