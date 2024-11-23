@@ -8,22 +8,21 @@
 		<script type="text/javascript" src="joc.js"></script>
     </head>
     <body>
-        <div id="titol">
-            <header>Seven 1/2</header>
+        <div class="contenidor_titol_joc">
+            <header id="titol_joc">Seven 1/2</header>
         </div>
-        <div id="info_jugador">
+        <div class="contenidor_info_jugador">
             <h1>Player information</h1>
 
             <div id="entrada_info">
-                <label>Name: <input id="playerName" type="text"/></label><br/>
-				<label>Initial money: <input id="initialMoney" type="number"/></label><br/>
+                <label>Name: <input id="nom_jugador" type="text"/></label><br/>
+				<label>Initial money: <input id="diners_inicials" type="text"/></label><br/>
             </div>
         </div>
-        <div id="entrada_joc">
+        <div class="contenidor_entrada_joc" id="entrada_joc">
             <button onclick="startGame()">Play</button>
         </div>
-        <div id="sortida_joc">
-
+        <div class="contenidor_sortida_joc" id="sortida_joc">
         </div>
     </body>
 </html>
