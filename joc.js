@@ -108,7 +108,7 @@ function playerTakeCard(bet) {
 	// Afegeix la carta a la taula.
 	let container = document.getElementsByClassName("cartes")[0];
 	let element = document.createElement("img");
-	element.setAttribute("src", "/cards/" + card.category() + card.value() + ".png");
+	element.setAttribute("src", "./cards/" + card.category() + card.value() + ".png");
 	element.setAttribute("alt", card.category() + card.value());
 	container.appendChild(element);
 
@@ -134,7 +134,7 @@ function dealerTakeCard(bet) {
 	// Afegeix la carta a la taula.
 	let container = document.getElementsByClassName("cartes")[1];
 	let element = document.createElement("img");
-	element.setAttribute("src", "/cards/" + card.category() + card.value() + ".png");
+	element.setAttribute("src", "./cards/" + card.category() + card.value() + ".png");
 	element.setAttribute("alt", card.category() + card.value());
 	container.appendChild(element);
 
